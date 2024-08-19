@@ -7,6 +7,9 @@ vim.g.mapleader = " "
 -- Line numbering
 vim.cmd("set number")
 
+-- Fix transparent BG
+vim.cmd("hi! Normal ctermbg=NONE guibg=NONE")
+
 -- Pane navigation
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
